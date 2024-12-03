@@ -2,7 +2,7 @@ from animal import Animal
 
 class Dog(Animal):
     def __init__(self, name, species, breed):
-        super().__init__(name, species)  # Initialize name and species from Animal
+        super().__init__(name, species)
         self.breed = breed
 
     def speak(self):
