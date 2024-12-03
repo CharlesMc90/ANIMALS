@@ -1,21 +1,17 @@
 from animal import Animal
 from dog import Dog
 
-def main():
-    # Create and test an Animal instance
-    generic_animal = Animal("Generic", "Unknown")
-    print(generic_animal)  # Test __str__ method
-    print(generic_animal.speak())  # Test speak method
+# Create and test an Animal instance
+animal1 = Animal("Generic", "Unknown")
+print(animal1)                # Test __str__
+print(animal1.speak())        # Test speak()
 
-    # Create and test a Dog instance
-    buddy = Dog("Buddy", "Canine", "Golden Retriever")
-    print(buddy)  # Test overridden __str__ method
-    print(buddy.speak())  # Test overridden speak method
+# Create and test a Dog instance
+dog1 = Dog("Buddy", "Canine", "Golden Retriever")
+print(dog1)                   # Test overridden __str__
+print(dog1.speak())           # Test overridden speak()
 
-    # Test the class-level list
-    print("\nAll Animals:")
-    for animal in Animal.all_animals:
-        print(animal)
-
-if __name__ == "__main__":
-    main()
+# Test the class-level list
+print("All Animals:")
+for animal in Animal.all_animals:
+    print(animal)
